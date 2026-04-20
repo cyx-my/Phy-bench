@@ -1,0 +1,112 @@
+{
+  "episode_id": "ep_001",
+  "world_id": "gravity_merry_go_round",
+  "seed": 462568970,
+  "num_objects": 7,
+  "duration_sec": 30.0,
+  "fps": 30,
+  "width": 800,
+  "height": 600,
+  "initial_conditions": [
+    {
+      "id": 0,
+      "position": [
+        620.0,
+        179.0
+      ],
+      "velocity": [
+        4.519378290533098,
+        -67.71779126314709
+      ],
+      "radius": 10,
+      "mass": 1
+    },
+    {
+      "id": 1,
+      "position": [
+        360.0,
+        171.0
+      ],
+      "velocity": [
+        76.89779336173257,
+        98.32764599423112
+      ],
+      "radius": 16,
+      "mass": 1
+    },
+    {
+      "id": 2,
+      "position": [
+        544.0,
+        468.0
+      ],
+      "velocity": [
+        20.639485495319263,
+        -22.53053238125962
+      ],
+      "radius": 12,
+      "mass": 1
+    },
+    {
+      "id": 3,
+      "position": [
+        549.0,
+        430.0
+      ],
+      "velocity": [
+        95.176985429946,
+        44.71236714023922
+      ],
+      "radius": 18,
+      "mass": 1
+    },
+    {
+      "id": 4,
+      "position": [
+        582.0,
+        144.0
+      ],
+      "velocity": [
+        -91.2453749828253,
+        4.9350129612760725
+      ],
+      "radius": 16,
+      "mass": 1
+    },
+    {
+      "id": 5,
+      "position": [
+        470.0,
+        406.0
+      ],
+      "velocity": [
+        45.364176165746215,
+        -92.32791670340652
+      ],
+      "radius": 13,
+      "mass": 1
+    },
+    {
+      "id": 6,
+      "position": [
+        636.0,
+        282.0
+      ],
+      "velocity": [
+        98.84873015181074,
+        -76.61392395621826
+      ],
+      "radius": 10,
+      "mass": 1
+    }
+  ],
+  "extra": {
+    "num_objects": 7,
+    "gravity_strength": 500,
+    "gravity_change_interval": 5,
+    "duration_sec": 30.0,
+    "fps": 30,
+    "width": 800,
+    "height": 600
+  }
+}

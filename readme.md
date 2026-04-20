@@ -1,74 +1,150 @@
-视频生成要求：
-1. **反重力弹跳** - 物体向上掉落，越弹越高
+# Phy-Bench: Multi-World Physical Law Benchmark
 
-2. **黑洞吸尘器** - 所有物体被吸向屏幕中心，靠近后弹飞
+A benchmark for evaluating **world models' ability to discover and apply physical laws** across multiple simulated worlds with distinct, non-Newtonian physics rules.
 
-3. **时间减速带** - 屏幕一半物体慢动作，另一半快进
+## Research Goal
 
-4. **质量震荡球** - 小球周期性地变重变轻，忽快忽慢
+We evaluate two tiers of ability:
 
-5. **反弹加速器** - 每次碰撞速度翻倍，直到飞出屏幕
+| Tier | Question | Task |
+|------|----------|------|
+| **Prediction** | Can the model *apply* a rule? | Given first N frames (± rule description), predict next M frames |
+| **Induction** | Can the model *discover* a rule? | Given K example videos, produce a natural language rule description |
 
-6. **重力旋转木马** - 重力方向每5秒旋转90度
+This targets a gap in existing benchmarks: most prior work tests whether models *follow* known physics, but not whether they can *abstract* rules from data.
 
-7. **记忆金属球** - 球体会自动回到5秒前的位置
+## The 10 Physics Worlds
 
-8. **碰撞分裂术** - 球碰撞时分裂成两个更小的球
+Each world has one core physics rule that deviates from Newtonian physics:
 
-9. **弹簧地板** - 地板会随压力下沉然后弹起物体
+| # | World ID | Name | Core Rule |
+|---|----------|------|-----------|
+| 1 | `anti_gravity_bounce` | 反重力弹跳 | 重力向上；每次弹跳速度翻倍 |
+| 2 | `black_hole` | 黑洞吸尘器 | 中心引力 ∝ 1/r²；核心区域变斥力 |
+| 3 | `time_dilation` | 时间减速带 | 左半屏时间步长为右半屏的1/4 |
+| 4 | `mass_oscillation` | 质量震荡球 | 质量以~2s周期正弦震荡 |
+| 5 | `bounce_accelerator` | 反弹加速器 | 每次碰壁速度×2（弹性系数=2） |
+| 6 | `gravity_merry_go_round` | 重力旋转木马 | 重力方向每5s顺时针转90° |
+| 7 | `memory_metal_ball` | 记忆金属球 | 每5s将物体传送回5s前的位置 |
+| 8 | `collision_split` | 碰撞分裂术 | 碰撞时双方各分裂为两个半径/质量减半的子球 |
+| 9 | `spring_floor` | 弹簧地板 | 地板可变形；弹起高度∝冲击速度 |
+| 10 | `anti_newton_pendulum` | 反牛顿摆 | 碰撞后双方朝同向运动（反动量守恒） |
 
-10. **反牛顿摆** - 两球碰撞后朝同一方向运动
+## Project Structure
 
----
-
-## 使用说明
-
-### 环境准备
-1. 安装 Python 3.7+
-2. 安装依赖包：`pip install -r requirements.txt`
-
-### 现有脚本
-已实现以下物理效果的生成脚本：
-
-| 效果 | 脚本文件 | 输出视频 |
-|------|----------|----------|
-| 反重力弹跳 | `test.py` | `weird_physics.mp4` |
-| 黑洞吸尘器 | `black_hole.py` | `black_hole.mp4` |
-| 时间减速带 | `time_dilation.py` | `time_dilation.mp4` |
-| 质量震荡球 | `mass_oscillation.py` | `mass_oscillation.mp4` |
-| 反弹加速器 | `bounce_accelerator.py` | `bounce_accelerator.mp4` |
-| 重力旋转木马 | `gravity_merry_go_round.py` | `gravity_merry_go_round.mp4` |
-| 记忆金属球 | `memory_metal_ball.py` | `memory_metal_ball.mp4` |
-| 碰撞分裂术 | `collision_split.py` | `collision_split.mp4` |
-| 弹簧地板 | `spring_floor.py` | `spring_floor.mp4` |
-| 反牛顿摆 | `anti_newton_pendulum.py` | `anti_newton_pendulum.mp4` |
-
-### 运行方法
-```bash
-python test.py                     # 生成反重力弹跳视频
-python black_hole.py               # 生成黑洞吸尘器视频
-python time_dilation.py            # 生成时间减速带视频
-python mass_oscillation.py         # 生成质量震荡球视频
-python bounce_accelerator.py       # 生成反弹加速器视频
-python gravity_merry_go_round.py   # 生成重力旋转木马视频
-python memory_metal_ball.py        # 生成记忆金属球视频
-python collision_split.py          # 生成碰撞分裂术视频
-python spring_floor.py             # 生成弹簧地板视频
-python anti_newton_pendulum.py     # 生成反牛顿摆视频
+```
+Phy-bench/
+├── benchmark/
+│   ├── world_configs.py      # World definitions, rule descriptions, check criteria
+│   ├── data_schema.py        # Data format spec and I/O helpers
+│   ├── tasks.py              # Task definitions, prompt templates, probing questions
+│   ├── evaluator.py          # Prediction + induction scoring protocol
+│   └── dataset_builder.py   # Build structured dataset from simulation scripts
+├── worlds/                   # Simulation scripts (one per world)
+│   ├── black_hole.py         ✓ implemented
+│   ├── gravity_merry_go_round.py  ✓ implemented
+│   └── ...                   (8 more to implement)
+├── data/                     # Generated dataset (gitignored)
+│   └── worlds/<world_id>/
+│       ├── world_meta.json
+│       ├── rule_description.json
+│       └── episodes/ep_NNN/
+│           ├── video.mp4
+│           ├── states.jsonl  # Per-frame physics state
+│           └── episode_meta.json
+├── research.md               # Research survey and design rationale
+├── requirements.txt
+└── readme.md
 ```
 
-每个脚本会运行约15秒，生成对应的MP4视频文件。
+## Dataset Format
 
-### 交互操作
-- 按**空格键**可以添加新的小球
-- 按**ESC**或关闭窗口可以提前结束录制
+### Episode data (`states.jsonl`)
 
-### 自定义参数
-可以在脚本中调整以下参数：
-- 视频分辨率 (800, 600)
-- 帧率 (fps=30)
-- 录制时长 (max_frames)
-- 物理参数 (重力、弹性、摩擦力等)
+Each line is a JSON object for one frame:
+```json
+{
+  "frame": 42,
+  "timestamp": 1.4,
+  "objects": [
+    {"id": 0, "position_x": 320.5, "position_y": 240.1, "velocity_x": -50.2, "velocity_y": 120.0}
+  ],
+  "world_state": {"gravity_x": 0, "gravity_y": -500},
+  "events": [{"type": "collision", "obj_ids": [0, 1]}]
+}
+```
 
-### 所有效果已实现
-所有10个物理效果均已实现，可以直接运行对应的脚本生成视频。
+### Rule descriptions (`rule_description.json`)
+
+Three verbosity levels per world:
+```json
+{
+  "world_id": "black_hole",
+  "concise": "...",    // 1 sentence
+  "standard": "...",   // 3-4 sentences, used as model input in rule-conditioned variant
+  "verbose": "..."     // full paragraph with noise, tests robustness
+}
+```
+
+## Evaluation
+
+### Tier 1 — Prediction Score
+
+Given context frames (first 1s) → predict target frames (next 2s):
+
+- **trajectory_mse**: Mean position error vs. ground truth
+- **physics_consistency**: Rule-specific checks (e.g., does speed double on bounce?)
+- **total_score**: 0.5 × (1 − mse_norm) + 0.5 × physics_consistency
+
+Two variants: `zero_shot` (no rule given) vs `rule_conditioned` (rule description given).
+
+### Tier 2 — Induction Score
+
+Given K=3 training episodes → produce natural language rule description:
+
+- **fact_coverage** (40%): Fraction of required facts covered (LLM-judged)
+- **bonus_coverage** (15%): Fraction of bonus facts covered
+- **confusion_penalty** (−15%): Penalize common wrong conclusions
+- **generalization_accuracy** (30%): Accuracy on follow-up counterfactual questions
+
+## Quick Start
+
+```bash
+pip install -r requirements.txt
+
+# Generate a small test dataset (2 episodes per world)
+python -m benchmark.dataset_builder --episodes-per-world 2 --data-root data_test/
+
+# Generate full dataset (20 episodes per world)
+python -m benchmark.dataset_builder --episodes-per-world 20 --data-root data/
+
+# Run a specific world
+python worlds/black_hole.py
+python worlds/gravity_merry_go_round.py
+```
+
+## Implementing a New World Script
+
+Each script in `worlds/` should expose:
+
+```python
+def run_episode(output_dir: str, seed: int, fps: int = 30) -> dict:
+    """
+    Run simulation, write:
+      - output_dir/video.mp4
+      - output_dir/states.jsonl  (via benchmark.data_schema.StatesWriter)
+    Return dict with keys: num_objects, initial_conditions, ...
+    """
+    ...
+```
+
+See `worlds/black_hole.py` for a reference implementation.
+
+## Dependencies
+
+```
+pygame==2.5.2
+pymunk==6.5.0
+opencv-python==4.9.0.80
+numpy==1.24.4
+```

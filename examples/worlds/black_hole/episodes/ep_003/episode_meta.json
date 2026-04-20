@@ -1,0 +1,102 @@
+{
+  "episode_id": "ep_003",
+  "world_id": "black_hole",
+  "seed": 374463918,
+  "num_objects": 6,
+  "duration_sec": 15.0,
+  "fps": 30,
+  "width": 800,
+  "height": 600,
+  "initial_conditions": [
+    {
+      "id": 0,
+      "position": [
+        425.0,
+        276.0
+      ],
+      "velocity": [
+        40.64867111200331,
+        73.19439721430132
+      ],
+      "radius": 16,
+      "mass": 1
+    },
+    {
+      "id": 1,
+      "position": [
+        411.0,
+        197.0
+      ],
+      "velocity": [
+        -83.84543282801793,
+        -73.29473245589007
+      ],
+      "radius": 14,
+      "mass": 1
+    },
+    {
+      "id": 2,
+      "position": [
+        352.0,
+        326.0
+      ],
+      "velocity": [
+        -59.7077979237812,
+        40.47703914652914
+      ],
+      "radius": 13,
+      "mass": 1
+    },
+    {
+      "id": 3,
+      "position": [
+        456.0,
+        252.0
+      ],
+      "velocity": [
+        42.6724578836058,
+        9.264292427641948
+      ],
+      "radius": 12,
+      "mass": 1
+    },
+    {
+      "id": 4,
+      "position": [
+        309.0,
+        466.0
+      ],
+      "velocity": [
+        -84.511257830587,
+        -49.24155406854032
+      ],
+      "radius": 18,
+      "mass": 1
+    },
+    {
+      "id": 5,
+      "position": [
+        413.0,
+        424.0
+      ],
+      "velocity": [
+        -1.0736387890925414,
+        39.22270979844566
+      ],
+      "radius": 10,
+      "mass": 1
+    }
+  ],
+  "extra": {
+    "num_objects": 6,
+    "black_hole_center": [
+      400,
+      300
+    ],
+    "black_hole_radius": 50,
+    "duration_sec": 15.0,
+    "fps": 30,
+    "width": 800,
+    "height": 600
+  }
+}

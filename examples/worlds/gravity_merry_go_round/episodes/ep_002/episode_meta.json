@@ -1,0 +1,86 @@
+{
+  "episode_id": "ep_002",
+  "world_id": "gravity_merry_go_round",
+  "seed": 163868757,
+  "num_objects": 5,
+  "duration_sec": 30.0,
+  "fps": 30,
+  "width": 800,
+  "height": 600,
+  "initial_conditions": [
+    {
+      "id": 0,
+      "position": [
+        134.0,
+        334.0
+      ],
+      "velocity": [
+        14.011796650504934,
+        -64.92225121314266
+      ],
+      "radius": 18,
+      "mass": 1
+    },
+    {
+      "id": 1,
+      "position": [
+        505.0,
+        136.0
+      ],
+      "velocity": [
+        9.687135622476276,
+        -68.30667044223415
+      ],
+      "radius": 20,
+      "mass": 1
+    },
+    {
+      "id": 2,
+      "position": [
+        356.0,
+        258.0
+      ],
+      "velocity": [
+        -9.9232075865403,
+        -62.93973214338011
+      ],
+      "radius": 13,
+      "mass": 1
+    },
+    {
+      "id": 3,
+      "position": [
+        677.0,
+        190.0
+      ],
+      "velocity": [
+        54.79285904159207,
+        -96.15597070242107
+      ],
+      "radius": 19,
+      "mass": 1
+    },
+    {
+      "id": 4,
+      "position": [
+        188.0,
+        477.0
+      ],
+      "velocity": [
+        -41.02074728280265,
+        -40.43730015831055
+      ],
+      "radius": 19,
+      "mass": 1
+    }
+  ],
+  "extra": {
+    "num_objects": 5,
+    "gravity_strength": 500,
+    "gravity_change_interval": 5,
+    "duration_sec": 30.0,
+    "fps": 30,
+    "width": 800,
+    "height": 600
+  }
+}

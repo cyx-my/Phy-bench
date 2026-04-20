@@ -1,0 +1,10 @@
+{
+  "num_worlds": 2,
+  "world_ids": [
+    "black_hole",
+    "gravity_merry_go_round"
+  ],
+  "episodes_per_world": 3,
+  "total_episodes": 6,
+  "created_at": "2026-04-19T16:16:59.715671+00:00"
+}

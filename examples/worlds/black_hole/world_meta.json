@@ -1,0 +1,15 @@
+{
+  "world_id": "black_hole",
+  "name": "黑洞吸尘器",
+  "num_episodes": 3,
+  "split": {
+    "train": [
+      "ep_001",
+      "ep_003"
+    ],
+    "test": [
+      "ep_002"
+    ]
+  },
+  "created_at": "2026-04-19T16:15:28.940505+00:00"
+}
