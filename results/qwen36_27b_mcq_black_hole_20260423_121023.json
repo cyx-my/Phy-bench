@@ -1,0 +1,285 @@
+{
+  "model": "/home/cyx/.cache/modelscope/hub/models/Qwen/Qwen3.6-27B",
+  "fps": 1.0,
+  "overall_accuracy": 0.0,
+  "total_correct": 0,
+  "total_questions": 21,
+  "world_breakdown": {
+    "black_hole": {
+      "correct": 0,
+      "total": 21
+    }
+  },
+  "episodes": [
+    {
+      "video": "examples/worlds/black_hole/episodes/ep_001/video.mp4",
+      "world_id": "black_hole",
+      "model_response": "这个任务需要我仔细观察提供的图片序列，推断出这个“陌生物理世界”的运动规律，然后回答选择题。\n\n**第一步：观察物体运动轨迹和相互作用**\n\n*   **中心物体：** 屏幕正中央有一个紫色的圆圈，里面有一个小点。这看起来像是一个引力源或者某种中心场。\n*   **蓝色球体：** 有两个蓝色的球。\n    *   在图1中，一个在左下，一个在右侧。\n    *   在图2中，左下的蓝球向右移动，右侧的蓝球向左移动。它们似乎都在向中心靠近。\n    *   在图3、4、5中，这两个蓝球非常靠近中心，甚至看起来像是绕着中心转或者被吸引过去。\n    *   在图6中，一个蓝球在中心左下方，另一个在正下方。\n    *   在图7中，一个蓝球在右上方，一个在正下方。\n    *   在图8中，一个蓝球在右上方，一个在正下方。\n    *   在图9中，一个蓝球在右上方，一个在正下方。\n    *   在图10中，一个蓝球在右上方，一个在正下方。\n    *   在图11中，一个蓝球在右侧，一个在正下方。\n    *   在图12中，一个蓝球在右侧，一个在正下方。\n    *   在图13中，一个蓝球在中心右侧，一个在正下方。\n    *   在图14中，一个蓝球在上方，一个在正下方。\n    *   在图15中，一个蓝球在上方，一个在正下方。\n    *   **关键观察：** 注意看那两个蓝色的球。在图1-5中，它们似乎被中心吸引。但在图6之后，它们的位置变化很大。让我们再看看其他球。\n\n*   **其他颜色的球（绿色、米色、棕色、红色）：**\n    *   **绿色球：** 在左上角。图1-15它一直在左上角附近，位置变化不大，似乎被某种力束缚或者只是移动很慢。\n    *   **米色球：** 在上方。图1在中间偏上，图2在中间偏上，图",
+      "parsed_answers": {},
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "在这个世界中，物体的运动主要受什么影响？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "物体受到的引力大小与距离有什么关系？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "当一个物体非常靠近屏幕中心时会发生什么？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "除了中心引力和边界弹力外，物体还受什么力？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "C",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "这个世界的规律与以下哪种误解最不同？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "一个距离中心很远的静止球会怎样运动？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "一个球非常靠近屏幕中心（核心区域）时会发生什么？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 0,
+      "num_total": 7,
+      "num_answered": 0,
+      "accuracy": 0.0,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 0,
+          "total": 3,
+          "accuracy": 0.0
+        },
+        "bonus_fact": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "confusion": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "generalization": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/black_hole/episodes/ep_002/video.mp4",
+      "world_id": "black_hole",
+      "model_response": "这个任务需要我仔细观察提供的图片序列，推断出这个“陌生物理世界”的运动规律，然后回答选择题。\n\n**第一步：观察物体运动轨迹和受力情况。**\n\n*   **中心物体：** 屏幕正中央有一个紫色的圆圈，里面有一个小点。这看起来像是一个引力源或者某种中心场。\n*   **周围物体：** 有很多不同颜色的小球（绿色、紫色、粉色、浅蓝色、棕色等）。\n*   **运动趋势：**\n    *   看第一张图到最后一张图，物体似乎在绕着中心旋转，或者被吸引向中心。\n    *   让我们追踪几个特定的球。\n    *   **左上角的浅蓝色球：** 在图1中在左上角。图2中位置没变太多。图3中稍微向右下移动。图4中继续向右下。图5中继续。图6中继续。图7中继续。图8中继续。图9中继续。图10中继续。图11中继续。图12中继续。图13中继续。图14中继续。图15中继续。看起来它在缓慢地向中心靠近，或者绕着中心转。\n    *   **右上角的绿色球：** 在图1中在上方。图2中位置差不多。图3中位置差不多。图4中位置差不多。图5中位置差不多。图6中位置差不多。图7中位置差不多。图8中位置差不多。图9中位置差不多。图10中位置差不多。图11中位置差不多。图12中位置差不多。图13中位置差不多。图14中位置差不多。图15中位置差不多。等等，仔细看，这些球其实是在**绕着中心旋转**。\n    *   让我们重新仔细看每一帧的变化。\n    *   **图1 -> 图2:** 左上角的浅蓝球位置几乎没变。右上角的绿色球位置几乎没变。\n    *   **图2 -> 图3:** 左上角的浅蓝球稍微向右下移动了一点。\n    *   **图3 -> 图4:** 左上角的浅蓝球继续向右下移动。\n    *   **图4 -> 图5:** 左上角的浅蓝球继续向右下移动。\n    *   **图5 -> 图6:** 左上角的浅蓝球继续向右下移动。",
+      "parsed_answers": {},
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "在这个世界中，物体的运动主要受什么影响？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "物体受到的引力大小与距离有什么关系？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "当一个物体非常靠近屏幕中心时会发生什么？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "除了中心引力和边界弹力外，物体还受什么力？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "C",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "这个世界的规律与以下哪种误解最不同？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "一个距离中心很远的静止球会怎样运动？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "一个球非常靠近屏幕中心（核心区域）时会发生什么？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 0,
+      "num_total": 7,
+      "num_answered": 0,
+      "accuracy": 0.0,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 0,
+          "total": 3,
+          "accuracy": 0.0
+        },
+        "bonus_fact": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "confusion": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "generalization": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/black_hole/episodes/ep_003/video.mp4",
+      "world_id": "black_hole",
+      "model_response": "这个任务需要我仔细观察提供的图片序列，推断出这个“陌生物理世界”的运动规律，然后回答选择题。\n\n**第一步：观察物体运动轨迹和受力情况。**\n\n*   **中心物体：** 屏幕正中心有一个紫色的圆圈，里面有一个小点。这看起来像是一个引力源或者某种中心场。\n*   **其他物体：** 有六个不同颜色和大小的球体（深灰、浅灰、蓝、黄绿、浅绿、棕）。\n*   **运动趋势分析：**\n    *   **图1 -> 图2 -> 图3：** 所有的球似乎都在远离中心。\n        *   深灰球：从上方偏中 -> 上方偏左。\n        *   浅灰球：从右上方 -> 右上方更远。\n        *   蓝球：从中心右侧 -> 右侧更远。\n        *   黄绿球：从中心左侧 -> 左下方。\n        *   浅绿球：从下方 -> 下方偏右。\n        *   棕球：从左下方 -> 左下方更远。\n    *   **图3 -> 图4 -> 图5：** 物体继续向外扩散。\n        *   蓝球向右移动。\n        *   浅灰球向右上方移动。\n        *   黄绿球向左下方移动。\n        *   棕球向左移动。\n    *   **图5 -> 图6 -> 图7：** 物体继续向外，直到碰到边界。\n        *   蓝球碰到了右边界。\n        *   浅灰球碰到了上边界。\n        *   黄绿球碰到了下边界。\n        *   棕球碰到了左边界。\n    *   **图7 -> 图8 -> 图9：** 物体碰到边界后反弹。\n        *   蓝球从右边界反弹回来，向左移动。\n        *   浅灰球从上边界反弹回来，向下移动。\n        *   黄绿球从下边界反弹回来，向上移动。\n        *   棕球从左边界反弹回来，向右移动。\n    *   **图9 -> 图10 -> 图11：** 物体反弹后向中心汇聚？不，仔细看。\n        *   蓝球向左移动，靠近中心。\n        *   浅灰球向下移动",
+      "parsed_answers": {},
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "在这个世界中，物体的运动主要受什么影响？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "物体受到的引力大小与距离有什么关系？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "当一个物体非常靠近屏幕中心时会发生什么？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "除了中心引力和边界弹力外，物体还受什么力？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "C",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "这个世界的规律与以下哪种误解最不同？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "一个距离中心很远的静止球会怎样运动？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "一个球非常靠近屏幕中心（核心区域）时会发生什么？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 0,
+      "num_total": 7,
+      "num_answered": 0,
+      "accuracy": 0.0,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 0,
+          "total": 3,
+          "accuracy": 0.0
+        },
+        "bonus_fact": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "confusion": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "generalization": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "model": "/home/cyx/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-7B-Instruct",
+  "fps": 1.0,
+  "overall_accuracy": 0.5714285714285714,
+  "total_correct": 12,
+  "total_questions": 21,
+  "world_breakdown": {
+    "gravity_merry_go_round": {
+      "correct": 12,
+      "total": 21
+    }
+  },
+  "episodes": [
+    {
+      "video": "examples/worlds/gravity_merry_go_round/episodes/ep_001/video.mp4",
+      "world_id": "gravity_merry_go_round",
+      "model_response": "1. B\n2. B\n3. C\n4. D\n5. A\n6. B\n7. A",
+      "parsed_answers": {
+        "0": "B",
+        "1": "B",
+        "2": "C",
+        "3": "D",
+        "4": "A",
+        "5": "B",
+        "6": "A"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "这个世界的重力方向有什么特点？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "重力方向每次改变多少度？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "重力方向大约每隔多久改变一次？",
+          "correct": false,
+          "model_answer": "C",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "重力方向的顺序是什么？",
+          "correct": false,
+          "model_answer": "D",
+          "correct_answer": "B",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "下面哪种是对这个世界的错误理解？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "在第8秒时，球主要往哪个方向移动？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "如果在第12秒放一个静止的球，它会朝哪个方向落？",
+          "correct": false,
+          "model_answer": "A",
+          "correct_answer": "C",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 4,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 0.5714285714285714,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666
+        },
+        "bonus_fact": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/gravity_merry_go_round/episodes/ep_002/video.mp4",
+      "world_id": "gravity_merry_go_round",
+      "model_response": "1. B\n2. B\n3. C\n4. D\n5. A\n6. B\n7. A",
+      "parsed_answers": {
+        "0": "B",
+        "1": "B",
+        "2": "C",
+        "3": "D",
+        "4": "A",
+        "5": "B",
+        "6": "A"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "这个世界的重力方向有什么特点？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "重力方向每次改变多少度？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "重力方向大约每隔多久改变一次？",
+          "correct": false,
+          "model_answer": "C",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "重力方向的顺序是什么？",
+          "correct": false,
+          "model_answer": "D",
+          "correct_answer": "B",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "下面哪种是对这个世界的错误理解？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "在第8秒时，球主要往哪个方向移动？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "如果在第12秒放一个静止的球，它会朝哪个方向落？",
+          "correct": false,
+          "model_answer": "A",
+          "correct_answer": "C",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 4,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 0.5714285714285714,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666
+        },
+        "bonus_fact": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/gravity_merry_go_round/episodes/ep_003/video.mp4",
+      "world_id": "gravity_merry_go_round",
+      "model_response": "1. B\n2. B\n3. C\n4. D\n5. A\n6. B\n7. A",
+      "parsed_answers": {
+        "0": "B",
+        "1": "B",
+        "2": "C",
+        "3": "D",
+        "4": "A",
+        "5": "B",
+        "6": "A"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "这个世界的重力方向有什么特点？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "重力方向每次改变多少度？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "重力方向大约每隔多久改变一次？",
+          "correct": false,
+          "model_answer": "C",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "重力方向的顺序是什么？",
+          "correct": false,
+          "model_answer": "D",
+          "correct_answer": "B",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "下面哪种是对这个世界的错误理解？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "在第8秒时，球主要往哪个方向移动？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "如果在第12秒放一个静止的球，它会朝哪个方向落？",
+          "correct": false,
+          "model_answer": "A",
+          "correct_answer": "C",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 4,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 0.5714285714285714,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666
+        },
+        "bonus_fact": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "model": "/home/cyx/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-7B-Instruct",
+  "fps": 1.0,
+  "overall_accuracy": 0.6190476190476191,
+  "total_correct": 13,
+  "total_questions": 21,
+  "world_breakdown": {
+    "black_hole": {
+      "correct": 13,
+      "total": 21
+    }
+  },
+  "episodes": [
+    {
+      "video": "examples/worlds/black_hole/episodes/ep_001/video.mp4",
+      "world_id": "black_hole",
+      "model_response": "1. A\n2. B\n3. D\n4. C\n5. A\n6. B\n7. B",
+      "parsed_answers": {
+        "0": "A",
+        "1": "B",
+        "2": "D",
+        "3": "C",
+        "4": "A",
+        "5": "B",
+        "6": "B"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "在这个世界中，物体的运动主要受什么影响？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "物体受到的引力大小与距离有什么关系？",
+          "correct": false,
+          "model_answer": "B",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "当一个物体非常靠近屏幕中心时会发生什么？",
+          "correct": false,
+          "model_answer": "D",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "除了中心引力和边界弹力外，物体还受什么力？",
+          "correct": true,
+          "model_answer": "C",
+          "correct_answer": "C",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "这个世界的规律与以下哪种误解最不同？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "一个距离中心很远的静止球会怎样运动？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "一个球非常靠近屏幕中心（核心区域）时会发生什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 5,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 0.7142857142857143,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333
+        },
+        "bonus_fact": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/black_hole/episodes/ep_002/video.mp4",
+      "world_id": "black_hole",
+      "model_response": "1. A\n2. B\n3. C\n4. D\n5. A\n6. B\n7. B",
+      "parsed_answers": {
+        "0": "A",
+        "1": "B",
+        "2": "C",
+        "3": "D",
+        "4": "A",
+        "5": "B",
+        "6": "B"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "在这个世界中，物体的运动主要受什么影响？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "物体受到的引力大小与距离有什么关系？",
+          "correct": false,
+          "model_answer": "B",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "当一个物体非常靠近屏幕中心时会发生什么？",
+          "correct": false,
+          "model_answer": "C",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "除了中心引力和边界弹力外，物体还受什么力？",
+          "correct": false,
+          "model_answer": "D",
+          "correct_answer": "C",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "这个世界的规律与以下哪种误解最不同？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "一个距离中心很远的静止球会怎样运动？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "一个球非常靠近屏幕中心（核心区域）时会发生什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 4,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 0.5714285714285714,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333
+        },
+        "bonus_fact": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/black_hole/episodes/ep_003/video.mp4",
+      "world_id": "black_hole",
+      "model_response": "1. A\n2. B\n3. C\n4. D\n5. A\n6. B\n7. B",
+      "parsed_answers": {
+        "0": "A",
+        "1": "B",
+        "2": "C",
+        "3": "D",
+        "4": "A",
+        "5": "B",
+        "6": "B"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "在这个世界中，物体的运动主要受什么影响？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "物体受到的引力大小与距离有什么关系？",
+          "correct": false,
+          "model_answer": "B",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "当一个物体非常靠近屏幕中心时会发生什么？",
+          "correct": false,
+          "model_answer": "C",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "除了中心引力和边界弹力外，物体还受什么力？",
+          "correct": false,
+          "model_answer": "D",
+          "correct_answer": "C",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "这个世界的规律与以下哪种误解最不同？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "一个距离中心很远的静止球会怎样运动？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "一个球非常靠近屏幕中心（核心区域）时会发生什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 4,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 0.5714285714285714,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333
+        },
+        "bonus_fact": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      }
+    }
+  ]
+}

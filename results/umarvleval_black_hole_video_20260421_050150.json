@@ -1,0 +1,11 @@
+{
+  "video": "examples/worlds/black_hole/episodes/ep_001/video.mp4",
+  "world": "black_hole",
+  "model_path": "/home/cyx/.cache/modelscope/hub/models/TencentBAC/U-MARVEL-Qwen3VL-4B-Instruct",
+  "use_modelscope": false,
+  "num_frames": 8,
+  "prompt": "你是一个科学家，正在研究一个陌生的物理世界。你将观看1段来自同一个世界的视频，然后总结这个世界的物理规律。\n\n请注意：\n1. 这个世界的物理规律与真实世界不同，可能存在反常识的行为。\n2. 请仔细观察多段视频中共同出现的规律性现象。\n3. 忽略随机的初始条件差异（如物体的起始位置、颜色等），关注运动规律本身。\n\n请用清晰的中文回答以下问题：\n1. 【核心规律】用1-2句话描述这个世界最核心的物理规律。\n2. 【详细说明】用3-5句话详细解释这个规律是如何体现的。\n3. 【与真实世界的区别】这个规律与真实物理世界的哪条定律不同？\n\n\n世界ID: black_hole\n请注意观察视频中物体的运动规律。",
+  "response": "定律定律定律 laws定律定律律定律定律 law定律定律规律定律定律law定律定律-law定律定律 Laws定律定律法则定律定律laws定律定律物理学定律反定律反反定律相反反定律定律反牛牛牛 Newton NewtonNewton牛牛Newton牛 Newton牛牛定律牛牛反牛反Newton牛定律反Newton定律反 Newton定律反引力引力引力 gravitational引力引力 gravity引力引力gravity引力引力黑洞黑洞黑洞black hole黑洞黑洞黑黑洞黑洞ブラック黑洞黑洞-black黑洞黑洞定律黑洞黑洞引力黑洞引力引力定律黑洞引力定律引力引力黑色黑洞黑洞 gravitational引力定律定律黑洞事件黑洞黑洞事件事件黑洞事件 event事件事件事件 event黑洞黑洞物理学黑洞黑洞 physics黑洞黑洞物理黑洞黑洞physics黑洞黑洞Physics黑洞黑洞 Physics黑洞黑洞宇宙黑洞黑洞 cosmic宇宙宇宙宇宙黑洞中心点中心中心中心 center中心中心 centre中心中心黑洞中心为中心中心中心center黑洞中心中心为中心黑洞中心黑洞黑洞中心所有物体物体所有物体所有 objects所有物体万物万物万物所有物体被引力束缚束缚束缚引力引力吸引力引力引力 attraction引力引力吸引引力引力中心黑洞引力中心中心引力中心引力黑洞中心引力引力 center黑洞中心黑黑洞中心核心黑洞中心的核心引力束缚所有万物万物万万物万物一切物体物体的所有物体所有万物一切万物一切黑洞黑洞 black黑洞黑洞Black黑洞黑洞规律规律定律规律规律规律黑洞引力为核心的引力中心为中心引力中心核心引力中心 center黑洞为中心引力引力法则引力中心定律定律中心黑洞为核心引力中心为核心引力定律中心中心核心中心中心定律中心引力核心引力黑洞定律定律引力黑洞 gravitational gravitational引力中心黑中心黑洞黑中心引力定律违背 Newton牛 NewtonNewtonNewton牛NewtonNewton Newton牛Newton Newton Newton牛黑洞黑洞 laws黑洞黑洞laws黑洞黑洞法则黑洞黑洞异常黑洞引力奇数奇奇奇黑洞引力 centre黑洞引力 gravitational gravitational黑洞引力规律规律 laws黑洞引力为中心引力黑洞黑黑黑洞引力 center引力中心 gravitational引力黑洞物理学定律黑洞物理学物理学黑洞物理学物理黑洞引力束缚定律定律物理定律定律 physics黑洞引力法则黑洞引力所有物体都被引力黑洞中央黑洞中心 central黑洞中心 gravitational定律定律 gravitational引力核心黑洞黑洞 centre黑洞黑洞的核心引力中心所有中心黑洞为中心黑洞黑洞核心引力定律核心定律定律核心引力引力核心中心黑洞 centre引力黑洞物理定律黑洞 gravitational黑洞黑洞黑色黑洞引力 laws定律黑洞中心为核心中心中心为核心黑洞引力核心定律中心核心定律黑洞核心黑洞引力centre黑洞引力的核心引力黑洞核心中心引力法则定律黑洞定律引力定律物理学黑洞引力吸引力黑洞引力作用力引力黑洞 centre中心黑洞核心定律",
+  "frames_extracted": 8,
+  "timestamp": "20260421_050150"
+}

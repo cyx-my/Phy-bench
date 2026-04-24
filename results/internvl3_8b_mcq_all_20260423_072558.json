@@ -1,0 +1,606 @@
+{
+  "model": "/home/cyx/.cache/modelscope/hub/models/OpenGVLab/InternVL3-8B",
+  "num_segments": 8,
+  "overall_accuracy": 0.7619047619047619,
+  "total_correct": 32,
+  "total_questions": 42,
+  "world_breakdown": {
+    "black_hole": {
+      "correct": 20,
+      "total": 21
+    },
+    "gravity_merry_go_round": {
+      "correct": 12,
+      "total": 21
+    }
+  },
+  "episodes": [
+    {
+      "video": "examples/worlds/black_hole/episodes/ep_001/video.mp4",
+      "world_id": "black_hole",
+      "model_response": "1. A\n2. A\n3. B\n4. C\n5. A\n6. B\n7. B",
+      "parsed_answers": {
+        "0": "A",
+        "1": "A",
+        "2": "B",
+        "3": "C",
+        "4": "A",
+        "5": "B",
+        "6": "B"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "在这个世界中，物体的运动主要受什么影响？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "物体受到的引力大小与距离有什么关系？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "当一个物体非常靠近屏幕中心时会发生什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "除了中心引力和边界弹力外，物体还受什么力？",
+          "correct": true,
+          "model_answer": "C",
+          "correct_answer": "C",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "这个世界的规律与以下哪种误解最不同？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "一个距离中心很远的静止球会怎样运动？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "一个球非常靠近屏幕中心（核心区域）时会发生什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 7,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 1.0,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "bonus_fact": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/black_hole/episodes/ep_002/video.mp4",
+      "world_id": "black_hole",
+      "model_response": "1. A\n2. A\n33. B\n4. C\n5. A\n6. B\n7. B",
+      "parsed_answers": {
+        "0": "A",
+        "1": "A",
+        "3": "C",
+        "4": "A",
+        "5": "B",
+        "6": "B"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "在这个世界中，物体的运动主要受什么影响？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "物体受到的引力大小与距离有什么关系？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "当一个物体非常靠近屏幕中心时会发生什么？",
+          "correct": false,
+          "model_answer": null,
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "除了中心引力和边界弹力外，物体还受什么力？",
+          "correct": true,
+          "model_answer": "C",
+          "correct_answer": "C",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "这个世界的规律与以下哪种误解最不同？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "一个距离中心很远的静止球会怎样运动？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "一个球非常靠近屏幕中心（核心区域）时会发生什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 6,
+      "num_total": 7,
+      "num_answered": 6,
+      "accuracy": 0.8571428571428571,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666
+        },
+        "bonus_fact": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/black_hole/episodes/ep_003/video.mp4",
+      "world_id": "black_hole",
+      "model_response": "1. A\n2. A\n3. B\n4. C\n5. A\n6. B\n7. B",
+      "parsed_answers": {
+        "0": "A",
+        "1": "A",
+        "2": "B",
+        "3": "C",
+        "4": "A",
+        "5": "B",
+        "6": "B"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "在这个世界中，物体的运动主要受什么影响？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "物体受到的引力大小与距离有什么关系？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "当一个物体非常靠近屏幕中心时会发生什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "除了中心引力和边界弹力外，物体还受什么力？",
+          "correct": true,
+          "model_answer": "C",
+          "correct_answer": "C",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "这个世界的规律与以下哪种误解最不同？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "一个距离中心很远的静止球会怎样运动？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "一个球非常靠近屏幕中心（核心区域）时会发生什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 7,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 1.0,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "bonus_fact": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/gravity_merry_go_round/episodes/ep_001/video.mp4",
+      "world_id": "gravity_merry_go_round",
+      "model_response": "1. B\n2. A\n3. B\n4. B\n5. A\n6. D\n7. D",
+      "parsed_answers": {
+        "0": "B",
+        "1": "A",
+        "2": "B",
+        "3": "B",
+        "4": "A",
+        "5": "D",
+        "6": "D"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "这个世界的重力方向有什么特点？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "重力方向每次改变多少度？",
+          "correct": false,
+          "model_answer": "A",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "重力方向大约每隔多久改变一次？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "重力方向的顺序是什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "下面哪种是对这个世界的错误理解？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "在第8秒时，球主要往哪个方向移动？",
+          "correct": false,
+          "model_answer": "D",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "如果在第12秒放一个静止的球，它会朝哪个方向落？",
+          "correct": false,
+          "model_answer": "D",
+          "correct_answer": "C",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 4,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 0.5714285714285714,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666
+        },
+        "bonus_fact": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/gravity_merry_go_round/episodes/ep_002/video.mp4",
+      "world_id": "gravity_merry_go_round",
+      "model_response": "1. B\n2. A\n3. B\n4. B\n5. A\n6. C\n7. A",
+      "parsed_answers": {
+        "0": "B",
+        "1": "A",
+        "2": "B",
+        "3": "B",
+        "4": "A",
+        "5": "C",
+        "6": "A"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "这个世界的重力方向有什么特点？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "重力方向每次改变多少度？",
+          "correct": false,
+          "model_answer": "A",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "重力方向大约每隔多久改变一次？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "重力方向的顺序是什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "下面哪种是对这个世界的错误理解？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "在第8秒时，球主要往哪个方向移动？",
+          "correct": false,
+          "model_answer": "C",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "如果在第12秒放一个静止的球，它会朝哪个方向落？",
+          "correct": false,
+          "model_answer": "A",
+          "correct_answer": "C",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 4,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 0.5714285714285714,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666
+        },
+        "bonus_fact": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "video": "examples/worlds/gravity_merry_go_round/episodes/ep_003/video.mp4",
+      "world_id": "gravity_merry_go_round",
+      "model_response": "1. B\n2. A\n3. B\n4. B\n5. A\n6. C\n7. A",
+      "parsed_answers": {
+        "0": "B",
+        "1": "A",
+        "2": "B",
+        "3": "B",
+        "4": "A",
+        "5": "C",
+        "6": "A"
+      },
+      "per_question": [
+        {
+          "idx": 0,
+          "question": "这个世界的重力方向有什么特点？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 1,
+          "question": "重力方向每次改变多少度？",
+          "correct": false,
+          "model_answer": "A",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 2,
+          "question": "重力方向大约每隔多久改变一次？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "required_fact"
+        },
+        {
+          "idx": 3,
+          "question": "重力方向的顺序是什么？",
+          "correct": true,
+          "model_answer": "B",
+          "correct_answer": "B",
+          "source": "bonus_fact"
+        },
+        {
+          "idx": 4,
+          "question": "下面哪种是对这个世界的错误理解？",
+          "correct": true,
+          "model_answer": "A",
+          "correct_answer": "A",
+          "source": "confusion"
+        },
+        {
+          "idx": 5,
+          "question": "在第8秒时，球主要往哪个方向移动？",
+          "correct": false,
+          "model_answer": "C",
+          "correct_answer": "B",
+          "source": "generalization"
+        },
+        {
+          "idx": 6,
+          "question": "如果在第12秒放一个静止的球，它会朝哪个方向落？",
+          "correct": false,
+          "model_answer": "A",
+          "correct_answer": "C",
+          "source": "generalization"
+        }
+      ],
+      "num_correct": 4,
+      "num_total": 7,
+      "num_answered": 7,
+      "accuracy": 0.5714285714285714,
+      "source_breakdown": {
+        "required_fact": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666
+        },
+        "bonus_fact": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "confusion": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        },
+        "generalization": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        }
+      }
+    }
+  ]
+}
